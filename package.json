@@ -13,6 +13,8 @@
   "author": "xiaodong.li",
   "license": "ISC",
   "dependencies": {
+    "react": "^15.1.0",
+    "react-redux": "^4.4.5",
     "redux": "^3.5.2"
   }
 }

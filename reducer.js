@@ -27,7 +27,7 @@ function todos(state = [],action){
                         completed: !todo.completed
                     })
                 }
-                return todo
+                return todo;
             });
         default:
             return state
@@ -37,7 +37,7 @@ function todos(state = [],action){
 function visibilityFilter(state = SHOW_ALL, action){
     switch (action.type) {
         case SET_VISIBILITY_FILTER:
-            return action.filter
+            return action.filter;
         default:
             return state
     }
@@ -58,6 +58,12 @@ function visibilityFilter(state = SHOW_ALL, action){
 //            return state;
 //    }
 //}
-
+//export default function todoApp(state = {}, action) {
+//    return {
+//        visibilityFilter: visibilityFilter(state.visibilityFilter, action),
+//        todos: todos(state.todos, action)
+//    }
+//}
+//等价于下面
 const todoApp = combineReducers(visibilityFilter, todos);
 export default todoApp;
