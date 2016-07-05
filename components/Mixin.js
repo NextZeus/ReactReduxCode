@@ -28,3 +28,27 @@ var BindingExample = React.createClass({
 		);
 	}
 });
+
+var BindingExample2 = React.createClass({
+	mixins:[React.addons.LinkedStateMixin],
+	getInitState:function(){
+		return {
+			text: "", 
+		}
+	},
+	render:function(){
+		return (
+			<div>
+				<input type="text" placeholder="input text" 
+				valueLink={this.linkState('text')}
+				/>
+				<p>{this.state.text}</p>
+			</div>
+		);
+	}
+});
+
+React.render(
+	<BindingExample></BindingExample>,
+	document.body
+);
