@@ -7,7 +7,7 @@
  */
 
 import { createStore } from 'redux';
-import todoApp from './reducer.js';
+import todoApp from './reducers.js';
 
 let store = createStore(todoApp);
 

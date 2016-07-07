@@ -11,7 +11,7 @@ const initialState = {
     todos: []
 };
 
-function todos(state = [],action){
+function todos(state = [],action={}){
     switch (action.type){
         case ADD_TODO:
             return [
@@ -34,7 +34,7 @@ function todos(state = [],action){
     }
 }
 
-function visibilityFilter(state = SHOW_ALL, action){
+function visibilityFilter(state = SHOW_ALL, action={}){
     switch (action.type) {
         case SET_VISIBILITY_FILTER:
             return action.filter;
