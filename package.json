@@ -4,7 +4,8 @@
   "description": "learning react-redux",
   "main": "actions.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "webpack -d --watch",
+    "build" : "webpack -p"
   },
   "keywords": [
     "redux",
@@ -13,9 +14,14 @@
   "author": "xiaodong.li",
   "license": "ISC",
   "dependencies": {
+    "babel-core": "^6.10.4",
+    "babel-loader": "^6.2.4",
+    "babel-preset-es2015": "^6.9.0",
+    "babel-preset-react": "^6.11.1",
     "react": "^15.1.0",
     "react-dom": "^15.1.0",
     "react-redux": "^4.4.5",
-    "redux": "^3.5.2"
+    "redux": "^3.5.2",
+    "webpack": "^1.13.1"
   }
 }
