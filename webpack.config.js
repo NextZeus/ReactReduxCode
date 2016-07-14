@@ -7,7 +7,7 @@ var APP_DIR = path.resolve(__dirname, 'src/client/app');
 
 var config = {
     context:__dirname,
-    devtool: debug ? "inlint-sourcemap" : null,
+    devtool: debug ? "inline-sourcemap" : null,
     entry: APP_DIR + '/index.js',
     output: {
         path: BUILD_DIR,
