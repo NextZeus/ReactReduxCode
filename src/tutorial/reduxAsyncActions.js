@@ -53,7 +53,7 @@ store.dispatch({
     payload:axios.get('http://rest.learncode.academy/api/wstern/users')
 });
 
-//promise reducer
+//promise reducer 三个状态 PENDING REJECTED FULFILLED
 const reducer = function (state=initialState, action) {
     switch (action.type){
         case 'FETCH_USERS_PENDING':
